@@ -4,6 +4,7 @@
   font-size: 62.5%;
   --header-color: #212343;
   --hero-bg: url(../assets/header_bg.png);
+  --from-bg: #fff;
 }
 
 /*header*/
@@ -29,4 +30,16 @@
   background-image: var(--hero-bg);
   background-size: cover;
   background-position: center;
+}
+
+.container-banner > .center{
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.form{
+  width: 40rem;
+  height: 100%;
+  background-color: var(--from-bg);
 }
