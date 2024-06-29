@@ -1,6 +1,17 @@
+<!--
+usar o form com flex e 20 de gap
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet" />
+    <!---->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevFrom</title>
@@ -12,23 +23,41 @@
     <header>
       <div class="header">
         <div class="center">
-          <img src="./assets/logo.png" alt="web page logo">
+          <img src="./assets/logo.png" alt="web page logo" />
         </div>
       </div>
       <div class="container-banner">
         <div class="center">
           <div class="form">
+            <h2>
+              Preencha o formulario e inicie a sua caminhada para virar um
+              webmaster!
+            </h2>
+            <form action="">
+              <div class="input-container">
+                <span>Nome*</span>
+                <input type="text" name="nome" id="" required />
+              </div>
+              <div class="input-container">
+                <span>Email*</span>
+                <input type="text" name="email" id="" required />
+              </div>
+              <div class="input-container">
+                <span>Telefone*</span>
+                <input type="text" name="telefone" id="" required />
+              </div>
 
+              <p class="warning">*Campos obrigatorios!</p>
+              <div class="input-submit-container">
+                <input type="submit" name="acao" value="Enviar">
+              </div>
+            </form>
           </div>
-          <div class="header-text">
-            efaef
-          </div>
+          <div class="header-text"></div>
         </div>
       </div>
     </header>
 
-    <main>
-
-    </main>
+    <main></main>
   </body>
 </html>

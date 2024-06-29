@@ -2,9 +2,18 @@
 
 :root {
   font-size: 62.5%;
+  --base-font: "Open Sans", sans-serif;
   --header-color: #212343;
   --hero-bg: url(../assets/header_bg.png);
-  --from-bg: #fff;
+  --form-bg: #fff;
+  --form-boder-color: #ccc;
+  --form-h2: #999;
+  --form-tag: #bbb;
+  --form-button: #363a6d;
+}
+
+body{
+  font-family: var(--base-font);
 }
 
 /*header*/
@@ -39,7 +48,55 @@
 }
 
 .form{
+  padding: .8rem;
   width: 40rem;
-  height: 100%;
-  background-color: var(--from-bg);
+  height: calc(100% + 3rem);
+  position: relative;
+  top: -1.5rem;
+  border: .8rem solid var(--form-boder-color);
+  background-color: var(--form-bg);
+}
+
+.form h2{
+  font-weight: normal;
+  color: var(--form-h2);
+  font-size: 2rem;
+}
+
+.input-container{
+  margin-top: 2rem;
+}
+
+.input-container span, .form p{
+  display: block;
+  color: var(--form-tag);
+  font-size: 1.6rem;
+}
+
+.form p{
+  margin: 3rem 0;
+}
+
+.input-container input[type=text]{
+  width: 34.4rem;
+  height: 5.5rem;
+  border: .1rem solid var(--form-boder-color);
+}
+
+.form .input-submit-container{
+  text-align: center;
+}
+
+.form input[type=submit]{
+  color: var(--form-bg);
+  font-size: 2.6rem;
+  border: none;
+  width: 28rem;
+  height: 5.5rem;
+  cursor: pointer;
+  background-color: var(--form-button);
+}
+
+.form input[type=submit]:hover{
+  filter: brightness(0.8);
 }
