@@ -1,0 +1,32 @@
+/*Global*/
+
+:root {
+  font-size: 62.5%;
+  --header-color: #212343;
+  --hero-bg: url(../assets/header_bg.png);
+}
+
+/*header*/
+.header{
+  width: 100%;
+  height: 9rem;
+  background-color: var(--header-color);
+}
+
+.header img{
+  margin: 2.4rem;
+}
+
+.center{
+  max-width: 128rem;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.container-banner{
+  width: 100%;
+  height: 56rem;
+  background-image: var(--hero-bg);
+  background-size: cover;
+  background-position: center;
+}
