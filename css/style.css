@@ -12,10 +12,12 @@
   --form-button: #363a6d;
   --list-bg: rgba(33,35,67,0.7);
   --container-bg: #ddd;
+  --section-h2: #462663;
 }
 
 body{
   font-family: var(--base-font);
+  font-size: 1.6rem;
 }
 
 /*header*/
@@ -31,6 +33,7 @@ body{
 
 .center{
   max-width: 128rem;
+  padding: 0 4%;
   margin: 0 auto;
 }
 
@@ -45,6 +48,7 @@ body{
 .container-banner > .center{
   height: 100%;
   display: flex;
+  gap: 6rem;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
@@ -72,7 +76,6 @@ body{
 .input-container span, .form p{
   display: block;
   color: var(--form-tag);
-  font-size: 1.6rem;
 }
 
 .form p{
@@ -134,8 +137,7 @@ body{
 
 .container-2 p{
   margin: 1.5rem 0;
-  width: 70rem;
-  font-size: 1.6rem;
+  max-width: 70rem;
   display: inline-block;
   text-align: justify;
 }
@@ -149,4 +151,33 @@ body{
   height: 4rem;
   background-image: url("../assets/arrow.png");
   background-size: 100%;
+}
+
+.main-section{
+  padding: 9rem 0;
+}
+
+.main-section h2{
+  text-align: center;
+  color: var(--section-h2);
+  font-weight: normal;
+  font-size: 2.4rem;
+}
+
+.container-section{
+  margin-top: 6rem;
+  display: flex;
+  gap: 6rem;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.container-single img{
+  width: 7rem;
+}
+
+.text-container-single p{
+  padding: 1rem 0;
+  max-width: 30rem;
+  text-align: justify;
 }
