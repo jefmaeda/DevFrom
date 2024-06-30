@@ -10,6 +10,7 @@
   --form-h2: #999;
   --form-tag: #bbb;
   --form-button: #363a6d;
+  --list-bg: rgba(33,35,67,0.7);
 }
 
 body{
@@ -30,7 +31,6 @@ body{
 .center{
   max-width: 128rem;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .container-banner{
@@ -45,6 +45,7 @@ body{
   height: 100%;
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
 .form{
@@ -99,4 +100,22 @@ body{
 
 .form input[type=submit]:hover{
   filter: brightness(0.8);
+}
+
+.container-list{
+  padding: 1.6rem;
+  font-size: 2rem;
+  margin-top: 4rem;
+  width: 62rem;
+  height: 27rem;
+  background-color: var(--list-bg);
+}
+
+.container-list ul{
+  list-style-position: inside;
+}
+
+.container-list ul li{
+  color: var(--form-bg);
+  margin-top: 2.4rem;
 }
