@@ -11,6 +11,7 @@
   --form-tag: #bbb;
   --form-button: #363a6d;
   --list-bg: rgba(33,35,67,0.7);
+  --container-bg: #ddd;
 }
 
 body{
@@ -118,4 +119,34 @@ body{
 .container-list ul li{
   color: var(--form-bg);
   margin-top: 2.4rem;
+}
+
+.container-2{
+  padding: 4rem 0;
+  background-color: var(--container-bg);
+  text-align: center;
+}
+
+.container-2 h2{
+  font-weight: normal;
+  font-size: 2.4rem;
+}
+
+.container-2 p{
+  margin: 1.5rem 0;
+  width: 70rem;
+  font-size: 1.6rem;
+  display: inline-block;
+  text-align: justify;
+}
+
+.arrow{
+  position: relative;
+  top: 6rem;
+  left: 50%;
+  margin-left: -2rem;
+  width: 4rem;
+  height: 4rem;
+  background-image: url("../assets/arrow.png");
+  background-size: 100%;
 }
