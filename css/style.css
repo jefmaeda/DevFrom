@@ -56,7 +56,7 @@ body{
 
 .form{
   padding: .8rem;
-  width: 40rem;
+  max-width: 40rem;
   height: calc(100% + 3rem);
   position: relative;
   top: -1.5rem;
@@ -111,7 +111,7 @@ body{
   padding: 1.6rem;
   font-size: 2rem;
   margin-top: 4rem;
-  width: 62rem;
+  max-width: 62rem;
   height: 27rem;
   background-color: var(--list-bg);
 }
@@ -189,4 +189,25 @@ footer{
   border-top: .4rem solid var(--footer-bd);
   text-align: center;
   color: var(--form-tag);
+}
+
+/*media*/
+@media  (max-width: 840px) {
+.container-banner > .center{
+  flex-direction: column;
+  align-items: center;
+  gap: .1rem;
+}
+
+.container-banner{
+  height: 100%;
+}
+
+.container-section{
+  flex-direction: column;
+}
+
+.container-single{
+  align-self: center;
+}
 }
